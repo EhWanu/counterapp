@@ -6,7 +6,7 @@ export default function CounterHooks({ initialCount}) {
         <div>
         <button onClick={() => setState({ count: state.count - 1})}>-</button>
         <span>{state.count}</span>
-        <button>+</button>
+        <button onClick={() => setState({ count: state.count + 1})}>+</button>
     </div>
     )
 }
