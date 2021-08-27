@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default function CounterHooks(props) {
+export default function CounterHooks({ initialCount}) {
     return (
         <div>
         <button>-</button>
-        <span>{props.initialCount}</span>
+        <span>{initialCount}</span>
         <button>+</button>
     </div>
     )
