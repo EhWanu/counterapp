@@ -5,7 +5,7 @@ export default function CounterHooks({ initialCount}) {
     return (
         <div>
         <button>-</button>
-        <span>{initialCount}</span>
+        <span>{state.count}</span>
         <button>+</button>
     </div>
     )
