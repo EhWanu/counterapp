@@ -4,7 +4,9 @@ export default function CounterHooks({ initialCount}) {
     const [state, setState] = useState({ count: initialCount })
     return (
         <div>
-        <button onClick={() => setState({ count: state.count - 1})}>-</button>
+        <button onClick={() => setState(prevState => { 
+            return{ count: prevState.count - 1}
+        })}>-</button>
         <span>{state.count}</span>
         <button onClick={() => setState({ count: state.count + 1})}>+</button>
     </div>
